@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mocha Tests</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mocha/mocha.css" />
+</head>
+<body>
+  <div id="mocha"></div>
+
+  <!-- Load Mocha and Chai from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/mocha/mocha.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chai/chai.js"></script>
+
+  <script>
+    mocha.setup('bdd'); // Use BDD style (describe/it)
+  </script>
+
+  <!-- Your test file -->
+  <script src="./script.js"></script>
+  <script src="script_test.js"></script>
+ 
+
+  <script>
+    mocha.run();
+  </script>
+</body>
+</html>
